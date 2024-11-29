@@ -6,7 +6,11 @@
         <router-link to="/">Home</router-link>
       </nav>
     </header>
-    <router-view />
+
+    <!-- This is the container for your main content -->
+    <div class="container">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -16,19 +20,5 @@ export default {
 };
 </script>
 
-<style>
-header {
-  text-align: center;
-  padding: 1rem;
-  background-color: #ff6600;
-  color: white;
-}
-nav {
-  margin-top: 1rem;
-}
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: white;
-}
-</style>
+<style src="./assets/css/styles.css"></style>
+
